@@ -11,6 +11,20 @@ if (numeroPar % 2 == 0) {
 }
 */
 
-let numero1 = parseFloat(prompt("Ingrese un numero para multiplicar por dos"));
+let nota = parseFloat(prompt('Ingrese una nota'));
 
-console.log(numero1 * 2);
+if (nota >= 1) {
+    if (nota <= 5) {
+        console.log('Desaprobado');
+    } else if (nota <= 7) {
+        console.log('Aprobado');
+    } else if (nota <= 9) {
+        console.log('Muy bien');
+    } else if (nota == 10) {
+        console.log('Excelente');
+    } else {
+        console.log('Nota no valida');
+    }
+} else {
+    console.log('Nota no valida');
+}
